@@ -167,9 +167,31 @@ return {
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
-        -- clangd = {},
-        -- gopls = {},
-        -- pyright = {},
+        clangd = {},
+        gopls = {},
+        pyright = {},
+        html = {
+          opts = {
+            settings = {
+              html = {
+                format = {
+                  templating = true,
+                  wrapLineLength = 120,
+                  wrapAttributes = 'auto',
+                },
+                hover = {
+                  documentation = true,
+                  references = true,
+                },
+              },
+            },
+          },
+        },
+        -- htmx = {},
+        biome = {},
+        denols = {},
+        eslint = {},
+        -- ruby_lsp = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
