@@ -170,6 +170,12 @@ return {
         clangd = {},
         gopls = {},
         pyright = {},
+        biome = {},
+        denols = {},
+        eslint = {},
+        cssls = {},
+        hls = {},
+        omnisharp = {},
         html = {
           opts = {
             settings = {
@@ -183,15 +189,14 @@ return {
                   documentation = true,
                   references = true,
                 },
+                diagnostics = {
+                  enable = true,
+                },
               },
             },
           },
         },
         -- htmx = {},
-        biome = {},
-        denols = {},
-        eslint = {},
-        cssls = {},
         -- ruby_lsp = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -200,8 +205,7 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
-        -- ts_ls = {},
-        --
+        ts_ls = {},
 
         lua_ls = {
           -- cmd = {...},
@@ -234,6 +238,11 @@ return {
         'stylua', -- Used to format Lua code
         'htmlhint',
         'stylelint',
+        'clang-format',
+        'cpplint',
+        'hlint',
+        'fourmolu',
+        'csharpier',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
