@@ -7,8 +7,10 @@ return {
 
     g.ale_linters = {
       -- ruby = { 'rubocop', 'ruby' },
-      -- lua = { 'lua_language_server' },
+      lua = { 'lua_language_server' },
       cs = { 'OmniSharp' },
+      js = { 'biome' },
+      css = { 'stylelint' },
     }
   end,
 }
