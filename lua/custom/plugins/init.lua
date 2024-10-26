@@ -12,6 +12,7 @@ return {
   require 'custom.plugins.undo-tree',
   require 'custom.plugins.colorizer',
   require 'custom.plugins.omnisharp-vim',
-  require 'custom.plugins.ale',
+  -- require 'custom.plugins.ale',
   require 'custom.plugins.lackluster',
+  require 'custom.plugins.toggleterm',
 }
