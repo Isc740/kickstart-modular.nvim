@@ -16,4 +16,5 @@ return {
   require 'custom.plugins.toggleterm',
   require 'custom.plugins.lorem',
   require 'custom.plugins.kanagawa',
+  require 'custom.plugins.catppuccin',
 }
