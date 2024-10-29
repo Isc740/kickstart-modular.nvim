@@ -15,4 +15,5 @@ return {
   -- require 'custom.plugins.ale',
   require 'custom.plugins.lackluster',
   require 'custom.plugins.toggleterm',
+  require 'custom.plugins.lorem',
 }

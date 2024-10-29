@@ -6,7 +6,7 @@ return {
     config = function()
       local lint = require 'lint'
       lint.linters_by_ft = {
-        markdown = { 'markdownlint' },
+        -- markdown = { 'markdownlint' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
@@ -42,6 +42,7 @@ return {
 
       lint.linters_by_ft['css'] = { 'stylelint' }
       lint.linters_by_ft['html'] = { 'htmlhint' }
+      lint.linters_by_ft['js'] = { 'biome' }
       -- Create autocommand which carries out the actual linting
       -- on the specified events.
       local lint_augroup = vim.api.nvim_create_augroup('lint', { clear = true })

@@ -1,0 +1,3 @@
+return {
+  'mbpowers/lorem-nvim',
+}
