@@ -17,4 +17,5 @@ return {
   require 'custom.plugins.lorem',
   require 'custom.plugins.kanagawa',
   require 'custom.plugins.catppuccin',
+  require 'custom.plugins.tmux',
 }
