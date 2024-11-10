@@ -11,15 +11,16 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { 'C-q', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    { '<leader>re', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
     filesystem = {
       window = {
         mappings = {
-          ['C-q'] = 'close_window',
+          ['<leader>re'] = 'close_window',
         },
       },
+      hijack_netrw_behavior = 'open_current', -- netrw disabled, opening a directory opens neo-tree
     },
   },
 }
