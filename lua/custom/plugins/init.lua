@@ -20,4 +20,5 @@ return {
   require 'custom.plugins.tmux',
   require 'custom.plugins.oscyank',
   require 'custom.plugins.roslyn',
+  require 'custom.plugins.oil',
 }
