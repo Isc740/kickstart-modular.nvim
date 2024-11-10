@@ -176,6 +176,11 @@ return {
         cssls = {},
         hls = {},
         omnisharp = {},
+        templ = {
+          capabilities = capabilities,
+          filetypes = { 'templ' },
+          root_dir = require('lspconfig.util').root_pattern('go.work', 'go.mod', 'go.sum', '.git'),
+        },
         html = {
           opts = {
             settings = {
@@ -248,6 +253,11 @@ return {
         'gofumpt',
         'golangci-lint',
         'go-debug-adapter',
+        'htmlbeautifier',
+        'node-debug2-adapter',
+        'chrome-debug-adapter',
+        'js-debug-adapter',
+        'markdownlint',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

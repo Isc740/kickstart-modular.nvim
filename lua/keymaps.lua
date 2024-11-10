@@ -38,6 +38,9 @@ vim.keymap.set('n', '<leader>l', '<cmd>Lorem<CR>', { desc = 'Generate lorem text
 vim.keymap.set('n', '<leader>w', '<cmd>w<CR>', { desc = 'Save File' })
 vim.keymap.set('n', '<leader>q', '<cmd>q<CR>', { desc = 'Quit File' })
 
+vim.api.nvim_set_keymap('n', '"+y', ':OSCYank<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '"+y', ':OSCYank<CR>', { noremap = true, silent = true })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
