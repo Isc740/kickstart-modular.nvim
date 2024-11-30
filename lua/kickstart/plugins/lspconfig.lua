@@ -176,6 +176,7 @@ return {
         cssls = {},
         hls = {},
         omnisharp = {},
+        somesass_ls = {},
         templ = {
           capabilities = capabilities,
           filetypes = { 'templ' },
@@ -201,6 +202,7 @@ return {
             },
           },
         },
+        emmet_language_server = {},
         htmx = {},
         ruby_lsp = {},
         rust_analyzer = {},
@@ -258,6 +260,7 @@ return {
         'chrome-debug-adapter',
         'js-debug-adapter',
         'markdownlint',
+        'erb-formatter',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

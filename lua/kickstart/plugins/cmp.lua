@@ -117,6 +117,28 @@ return {
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
           { name = 'path' },
+          {
+            name = 'html-css',
+            option = {
+              enable_on = {
+                'html',
+              },
+              dir_to_exclude = { 'node_modules' },
+              file_extensions = { 'css', 'sass', 'less' },
+              style_sheets = {
+                'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css',
+                'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css',
+              },
+            },
+          },
+        },
+        formatting = {
+          format = function(entry, vim_item)
+            if entry.source.name == 'html-css' then
+              vim_item.menu = entry.completion_item.menu
+            end
+            return vim_item
+          end,
         },
       }
     end,

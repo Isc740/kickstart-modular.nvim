@@ -11,7 +11,7 @@ return {
   require 'custom.plugins.typescript-tools',
   require 'custom.plugins.undo-tree',
   require 'custom.plugins.colorizer',
-  -- require 'custom.plugins.omnisharp-vim',
+  require 'custom.plugins.omnisharp-vim',
   require 'custom.plugins.lackluster',
   require 'custom.plugins.toggleterm',
   require 'custom.plugins.lorem',
@@ -21,4 +21,7 @@ return {
   require 'custom.plugins.oscyank',
   require 'custom.plugins.roslyn',
   require 'custom.plugins.oil',
+  require 'custom.plugins.html-css',
+  require 'custom.plugins.nvim-ts-autotag',
+  require 'custom.plugins.easy-dotnet',
 }
