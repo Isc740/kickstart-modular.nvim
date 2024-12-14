@@ -182,26 +182,26 @@ return {
           filetypes = { 'templ' },
           root_dir = require('lspconfig.util').root_pattern('go.work', 'go.mod', 'go.sum', '.git'),
         },
-        html = {
-          opts = {
-            settings = {
-              html = {
-                format = {
-                  templating = true,
-                  wrapLineLength = 120,
-                  wrapAttributes = 'auto',
-                },
-                hover = {
-                  documentation = true,
-                  references = true,
-                },
-                diagnostics = {
-                  enable = true,
-                },
-              },
-            },
-          },
-        },
+        -- html = {
+        --   opts = {
+        --     settings = {
+        --       html = {
+        --         format = {
+        --           templating = true,
+        --           wrapLineLength = 120,
+        --           wrapAttributes = 'auto',
+        --         },
+        --         hover = {
+        --           documentation = true,
+        --           references = true,
+        --         },
+        --         diagnostics = {
+        --           enable = true,
+        --         },
+        --       },
+        --     },
+        --   },
+        -- },
         emmet_language_server = {},
         htmx = {},
         ruby_lsp = {},
