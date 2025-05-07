@@ -41,6 +41,9 @@ vim.keymap.set('n', '<leader>q', '<cmd>q<CR>', { desc = 'Quit File' })
 vim.api.nvim_set_keymap('n', '"+y', ':OSCYank<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '"+y', ':OSCYank<CR>', { noremap = true, silent = true })
 
+-- ror.lua
+vim.keymap.set('n', '<Leader>rc', ":lua require('ror.commands').list_commands()<CR>", { silent = true })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 

@@ -24,4 +24,7 @@ return {
   require 'custom.plugins.html-css',
   require 'custom.plugins.nvim-ts-autotag',
   require 'custom.plugins.easy-dotnet',
+  require 'custom.plugins.rails',
+  require 'custom.plugins.ror',
+  require 'custom.plugins.nvim-notify',
 }
