@@ -10,6 +10,7 @@ return {
         css = { 'stylelint' },
         html = { 'htmlhint' },
         js = { 'biome' },
+        rb = { 'erb-lint' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
