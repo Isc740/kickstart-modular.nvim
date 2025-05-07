@@ -262,6 +262,7 @@ return {
         'js-debug-adapter',
         'markdownlint',
         'erb-formatter',
+        'erb-lint',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
