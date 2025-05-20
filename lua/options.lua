@@ -23,6 +23,8 @@ vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'
 end)
 
+vim.diagnostic.config { virtual_text = true }
+
 -- Enable break indent
 vim.opt.breakindent = true
 

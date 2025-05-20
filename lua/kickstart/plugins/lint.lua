@@ -10,6 +10,7 @@ return {
         css = { 'stylelint' },
         html = { 'htmlhint' },
         js = { 'biome' },
+        jsx = { 'biome' },
         rb = { 'erb-lint' },
       }
 

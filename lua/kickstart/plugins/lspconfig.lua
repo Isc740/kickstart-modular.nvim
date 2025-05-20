@@ -173,7 +173,7 @@ return {
         pyright = {},
         biome = {},
         -- denols = {},
-        -- eslint = {},
+        eslint = {},
         cssls = {},
         hls = {},
         omnisharp = {},
@@ -183,30 +183,31 @@ return {
           filetypes = { 'templ' },
           root_dir = require('lspconfig.util').root_pattern('go.work', 'go.mod', 'go.sum', '.git'),
         },
-        -- html = {
-        --   opts = {
-        --     settings = {
-        --       html = {
-        --         format = {
-        --           templating = true,
-        --           wrapLineLength = 120,
-        --           wrapAttributes = 'auto',
-        --         },
-        --         hover = {
-        --           documentation = true,
-        --           references = true,
-        --         },
-        --         diagnostics = {
-        --           enable = true,
-        --         },
-        --       },
-        --     },
-        --   },
-        -- },
+        html = {
+          opts = {
+            settings = {
+              html = {
+                format = {
+                  templating = true,
+                  wrapLineLength = 120,
+                  wrapAttributes = 'auto',
+                },
+                hover = {
+                  documentation = true,
+                  references = true,
+                },
+                diagnostics = {
+                  enable = true,
+                },
+              },
+            },
+          },
+        },
         emmet_language_server = {},
         htmx = {},
         ruby_lsp = {},
         rust_analyzer = {},
+        tailwindcss = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:

@@ -38,7 +38,7 @@ return {
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         html = { 'prettier', 'erb-formatter', 'htmlbeautifier', stop_after_first = true },
-        javascript = { 'prettier', 'prettierd', 'biome', stop_after_first = true },
+        javascript = { 'biome', 'prettier', 'prettierd', stop_after_first = true },
       },
     },
   },
